@@ -1,0 +1,683 @@
+hr {
+  border: none; /* Убираем границу */
+  background-color: #e25e06;
+  height: 3px; /* Толщина линии */
+}
+
+.fig {
+  text-align: right; /* Выравнивание по центру */
+}
+
+/* меню */
+.top-menu {
+  position: relative;
+  background: rgba(78, 78, 78, 0.253);
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-item {
+  float: left;
+}
+.right-item {
+  float: right;
+}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  padding: 0 25px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: "Arimo", sans-serif;
+  font-weight: bold;
+  color: orangered;
+  transition: 0.3s linear;
+}
+.menu-main a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 830px) {
+  .menu-main {
+    padding-top: 90px;
+    text-align: center;
+  }
+  .navbar-logo {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+  }
+  .menu-main li {
+    float: none;
+    display: inline-block;
+  }
+  .menu-main a {
+    line-height: normal;
+    padding: 20px 15px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 630px) {
+  .menu-main li {
+    display: block;
+  }
+}
+/* всплываюшие окно */
+.picture {
+  /* Это картинка  красного цвета*/
+  width: 1px;
+  height: 1px;
+  background-color: #e25e06; /* цвет заднего фона */
+}
+.wrapper {
+  /* Это прозрачная обертка  растянутая по всему экрану и находящаяся поверх всех элементов страницы*/
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.substrate {
+  /* Это подложка   серого цвета с прозрачностью, растянутая по границам обертки */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(121, 120, 120, 0.596);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.block {
+  /* Это блок   белого цвета внутри обертки */
+  width: 900px;
+  height: 625px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid #e25e06;
+  border-radius: 30px;
+  position: absolute;
+  top: 25%;
+  left: 23%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.block1 {
+  /* Это блок   белого цвета внутри обертки */
+  width: 900px;
+  height: 425px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid #e25e06;
+  border-radius: 30px;
+  position: absolute;
+  top: 25%;
+  left: 23%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.close {
+  /* Это закрывашка блока  , обозначенная крестиком*/
+  color: red;
+  font-weight: bold;
+}
+
+#modal {
+  display: none;
+  pointer-events: none;
+}
+#modal:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal1 {
+  display: none;
+  pointer-events: none;
+}
+#modal1:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal2 {
+  display: none;
+  pointer-events: none;
+}
+#modal2:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal3 {
+  display: none;
+  pointer-events: none;
+}
+#modal3:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal4 {
+  display: none;
+  pointer-events: none;
+}
+#modal4:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal5 {
+  display: none;
+  pointer-events: none;
+}
+#modal5:target {
+  pointer-events: auto;
+}
+#modal6 {
+  display: none;
+  pointer-events: none;
+}
+#modal6:target {
+  pointer-events: auto;
+}
+#modal7 {
+  display: none;
+  pointer-events: none;
+}
+#modal7:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal8 {
+  display: none;
+  pointer-events: none;
+}
+#modal8:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal9 {
+  display: none;
+  pointer-events: none;
+}
+#modal9:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal10 {
+  display: none;
+  pointer-events: none;
+}
+#modal10:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal11 {
+  display: none;
+  pointer-events: none;
+}
+#modal11:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal12 {
+  display: none;
+  pointer-events: none;
+}
+#modal12:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal13 {
+  display: none;
+  pointer-events: none;
+}
+#modal13:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal14 {
+  display: none;
+  pointer-events: none;
+}
+#modal14:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal15 {
+  display: none;
+  pointer-events: none;
+}
+#modal15:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal16 {
+  display: none;
+  pointer-events: none;
+}
+#modal16:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal17 {
+  display: none;
+  pointer-events: none;
+}
+#modal17:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal18 {
+  display: none;
+  pointer-events: none;
+}
+#modal18:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal19 {
+  display: none;
+  pointer-events: none;
+}
+#modal19:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal20 {
+  display: none;
+  pointer-events: none;
+}
+#modal20:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal21 {
+  display: none;
+  pointer-events: none;
+}
+#modal21:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal22 {
+  display: none;
+  pointer-events: none;
+}
+#modal22:target {
+  display: block;
+  pointer-events: auto;
+}
+.blok-center1 {
+  position: absolute; /* Абсолютное позиционирование */
+  width: 420px; /* Ширина блока */
+  height: 500px; /* Высота блока */
+  margin: auto; /* Отступ от блока */
+  top: 61px; /* Положение блока от верхнего края */
+  bottom: 0px; /* Положение блока от нижнего края */
+  left: 0; /* Положение блока от левого края */
+  right: 1000px; /* Положение блока от правого края */
+  background: rgb(255, 255, 255); /* Цвет фона блока */
+  
+  padding: 1px; /* Отступ внутри блока */
+  overflow: auto; /* Полоса прокрутки */
+ }
+ .blok-center2 {
+  position: absolute; /* Абсолютное позиционирование */
+  width: 440px; /* Ширина блока */
+  height: 500px; /* Высота блока */
+  margin: auto; /* Отступ от блока */
+  top: 61px; /* Положение блока от верхнего края */
+  bottom: 0px; /* Положение блока от нижнего края */
+  left: 440px; /* Положение блока от левого края */
+  right: 0px; /* Положение блока от правого края */
+  background: rgb(255, 255, 255); /* Цвет фона блока */
+ 
+  padding: 0px; /* Отступ внутри блока */
+  overflow: auto; /* Полоса прокрутки */
+ }
+.blok-center3 {
+  position: absolute; /* Абсолютное позиционирование */
+  width: 440px; /* Ширина блока */
+  height: 50px; /* Высота блока */
+  margin: auto; /* Отступ от блока */
+  top: -7px; /* Положение блока от верхнего края */
+  bottom: 0px; /* Положение блока от нижнего края */
+  left: 440px; /* Положение блока от левого края */
+  right: 0px; /* Положение блока от правого края */
+  background: rgb(255, 255, 255); /* Цвет фона блока */
+  border-radius: 20px;
+  border: 3px solid  #e25e06;
+  padding: 0px; /* Отступ внутри блока */
+
+ }
+ .blok-center4 {
+  position: absolute; /* Абсолютное позиционирование */
+  width: 420px; /* Ширина блока */
+  height: 230px; /* Высота блока */
+  margin: auto; /* Отступ от блока */
+  top: 320px; /* Положение блока от верхнего края */
+  bottom: 0px; /* Положение блока от нижнего края */
+  left: 0px; /* Положение блока от левого края */
+  right: 0px; /* Положение блока от правого края */
+  background: rgb(255, 255, 255); /* Цвет фона блока */
+ 
+  padding: 10px; /* Отступ внутри блока */
+ 
+ }
+ 
+ .blok-center5 {
+  position: absolute; /* Абсолютное позиционирование */
+  width: 0px; /* Ширина блока */
+  height: 0px; /* Высота блока */
+  margin: auto; /* Отступ от блока */
+  top: 0px; /* Положение блока от верхнего края */
+  left: -440px; /* Положение блока от левого края */
+  right: 0px; /* Положение блока от правого края */
+  background: rgb(255, 255, 255); /* Цвет фона блока */
+}
+   
+ .blok-center6 {
+  position: absolute; /* Абсолютное позиционирование */
+  width: 0px; /* Ширина блока */
+  height: 0px; /* Высота блока */
+  margin: auto; /* Отступ от блока */
+  top: 0px; /* Положение блока от верхнего края */
+  left: -85px; /* Положение блока от левого края */
+  right: 0px; /* Положение блока от правого края */
+  background: rgb(255, 255, 255); /* Цвет фона блока */
+
+
+ }
+ .blok-center7 {
+  position: absolute; /* Абсолютное позиционирование */
+  width: 0px; /* Ширина блока */
+  height: 0px; /* Высота блока */
+  margin: auto; /* Отступ от блока */
+  top: 0px; /* Положение блока от верхнего края */
+  left: 180px; /* Положение блока от левого края */
+  right: 0px; /* Положение блока от правого края */
+  background: rgb(255, 255, 255); /* Цвет фона блока */
+ }
+
+
+
+ 
+
+
+
+ 
+ .color{
+  display: block;
+  box-sizing: border-box;
+  width: 50px;
+  height: 20px;
+  border-radius: 10%;
+  border: 1px solid #ffffff;
+  margin: 2px 0;
+  }
+  
+  .checked-color{
+  border: 0px solid rgb(255, 255, 255);
+  }
+  .image{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 20px;
+  left: 20px;
+  }
+  .checked-image{
+  z-index: 10;
+  }
+
+  
+
+      
+
+
+.wrapper{
+  text-align:center;
+  vertical-align:top;
+}
+.checkbox{
+  position:relative;
+  height:auto;
+  width:120px;
+  display:inline-block;
+}
+.checkbox img{
+  height:120px;
+  width:120px;
+  display:block;
+}
+.checkbox span{
+  margin:0px;
+  display:block;
+  text-align: center;
+  line-height: 10px; 
+}
+.checkbox label{
+  display:block;
+  cursor:pointer;
+  position:relative;
+}
+.checkbox label:before{
+  content:"";
+  display:block;
+  width:120px;
+  height:170px;
+  margin:auto;
+  position:absolute;
+  left:0px;
+  right:0;
+  top: 0px;
+  background-color:transparent;
+  border-radius:20px;
+  
+ 
+}
+
+
+.checkbox input[type=checkbox]{
+  display:none;
+}
+
+.checkbox input[type=checkbox]:checked + label:after{
+  border-color:#e25e06;
+  content:"";
+  display:block;
+  width:120px;
+  height:170px;
+  margin:auto;
+  position:absolute;
+  left:0px;
+  right:0;
+  top: 0px;
+  background-color:transparent;
+  border-radius:20px;
+  border: 3px solid #e25e06;
+}
+
+
+
+
+
+  .product-wrapper {
+    display: block;
+    width: 100%;
+    float: left;
+    transition: width .2s;
+  }
+  @media only screen and (min-width: 450px) {
+    .product-wrapper {
+      width: 50%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .product-wrapper {
+      width: 33.333%;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .product-wrapper {
+      width: 25%;
+    }
+  }
+  .product {
+    display: block;
+    border: 3px solid #e25e06;
+    border-radius: 10px;
+    position: relative;
+    background: #fff;
+    margin: 0 25px 25px 0;
+    text-decoration: none;
+    color: #474747;
+    z-index: 0;
+    height: 330px;
+    padding: 13px;
+  }
+  .blok-center10 {
+    position: absolute; /* Абсолютное позиционирование */
+    width: 1200px; /* Ширина блока */
+    height: 0px; /* Высота блока */
+    margin: auto; /* Отступ от блока */
+    top: -700px; /* Положение блока от верхнего края */
+    bottom: 0px; /* Положение блока от нижнего края */
+    left: 600; /* Положение блока от левого края */
+    right: 0px; /* Положение блока от правого края */
+    background: rgb(255, 110, 110); /* Цвет фона блока */
+   }
+
+   
+
+   .blok-center11 {
+    position: absolute; /* Абсолютное позиционирование */
+    width: 1200px; /* Ширина блока */
+    height: 0px; /* Высота блока */
+    margin: auto; /* Отступ от блока */
+    top: 1750px; /* Положение блока от верхнего края */
+    bottom: 0px; /* Положение блока от нижнего края */
+    left: 600; /* Положение блока от левого края */
+    right: 0px; /* Положение блока от правого края */
+    background: rgb(255, 110, 110); /* Цвет фона блока */
+   }
+
+   .blok-center12 {
+    position: absolute; /* Абсолютное позиционирование */
+  width: 350px; /* Ширина блока */
+  height:320px; /* Высота блока */
+  margin: auto; /* Отступ от блока */
+  top: 65px; /* Положение блока от верхнего края */
+  bottom: 0px; /* Положение блока от нижнего края */
+  left: 0; /* Положение блока от левого края */
+  right: 540px; /* Положение блока от правого края */
+  background: rgb(255, 255, 255); /* Цвет фона блока */
+  
+  padding: 1px; /* Отступ внутри блока */
+  overflow: auto; /* Полоса прокрутки */
+   }
+
+   .blok-center13 {
+    position: absolute; /* Абсолютное позиционирование */
+  width: 550px; /* Ширина блока */
+  height:320px; /* Высота блока */
+  margin: auto; /* Отступ от блока */
+  top: 65px; /* Положение блока от верхнего края */
+  bottom: 0px; /* Положение блока от нижнего края */
+  left: 10; /* Положение блока от левого края */
+  right: 0px; /* Положение блока от правого края */
+  background: rgb(255, 255, 255); /* Цвет фона блока */
+  
+  padding: 1px; /* Отступ внутри блока */
+  overflow: auto; /* Полоса прокрутки */
+   }
+
+   .blok-center14 {
+    position: absolute; /* Абсолютное позиционирование */
+  width: 0px; /* Ширина блока */
+  height: 0px; /* Высота блока */
+  margin: auto; /* Отступ от блока */
+  top: 200px; /* Положение блока от верхнего края */
+  bottom: 0px; /* Положение блока от нижнего края */
+  left: 0; /* Положение блока от левого края */
+  right: 0px; /* Положение блока от правого края */
+  background: rgb(255, 255, 255); /* Цвет фона блока */
+  
+  padding: 1px; /* Отступ внутри блока */
+  overflow: auto; /* Полоса прокрутки */
+   }
+
+   .shine-button {
+    bottom: 30px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fe6637;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fe6637;
+    transition: .2s ease-in-out;
+    top: 450px;
+    left: 250px;
+  }
+  
+  .shine-button:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -8px;
+    left: -75px;
+    transform: skewX(-45deg);
+  }
+  
+  .shine-button:hover {
+    background: #fe6637;
+    color: #fff;
+  }
+  
+  .shine-button:hover:before {
+    left: 150px;
+    transition: .5s ease-in-out;
+  }
+
+
+
+
+
+
+   
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
