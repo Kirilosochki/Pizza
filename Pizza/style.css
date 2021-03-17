@@ -10,7 +10,8 @@ hr {
 
 /* меню */
 .top-menu {
-  position: relative;
+  position: fixed;
+  width: 100%;
   background: rgba(78, 78, 78, 0.253);
 }
 .menu-main {
@@ -88,7 +89,7 @@ hr {
   width: 100vw;
   height: 100vh;
   background-color: transparent;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
