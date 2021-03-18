@@ -10,6 +10,7 @@ hr {
 
 /* меню */
 .top-menu {
+  z-index: 25;
   position: fixed;
   width: 100%;
   background: rgba(78, 78, 78, 0.253);
@@ -512,7 +513,9 @@ hr {
 
 
 
-
+#deserts {
+  top: 50px;
+}
 
   .product-wrapper {
     display: block;
