@@ -368,7 +368,7 @@ hr {
   width: 420px; /* Ширина блока */
   height: 230px; /* Высота блока */
   margin: auto; /* Отступ от блока */
-  top: 320px; /* Положение блока от верхнего края */
+  top: 180px; /* Положение блока от верхнего края */
   bottom: 0px; /* Положение блока от нижнего края */
   left: 0px; /* Положение блока от левого края */
   right: 0px; /* Положение блока от правого края */
@@ -455,12 +455,12 @@ hr {
 .checkbox{
   position:relative;
   height:auto;
-  width:120px;
+  width:125px;
   display:inline-block;
 }
 .checkbox img{
-  height:120px;
-  width:120px;
+  height:115px;
+  width:115px;
   display:block;
 }
 .checkbox span{
@@ -478,7 +478,7 @@ hr {
   content:"";
   display:block;
   width:120px;
-  height:170px;
+  height:175px;
   margin:auto;
   position:absolute;
   left:0px;
@@ -500,12 +500,12 @@ hr {
   content:"";
   display:block;
   width:120px;
-  height:170px;
+  height:180px;
   margin:auto;
   position:absolute;
   left:0px;
   right:0;
-  top: 0px;
+  top: -2px;
   background-color:transparent;
   border-radius:20px;
   border: 3px solid #e25e06;

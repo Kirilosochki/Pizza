@@ -112,15 +112,15 @@
 
 
 <div class="blok-center2">
-  <p id="FirstContent" style="font-size: 24px">30 см, традиционное тесто, 610 г</p>
+  <p id="FirstContent" style="font-size: 24px">25 см, традиционное тесто, 410 г</p>
 <div style="line-height: 13px">
-  <a id="SecondContent" class="left" style="font-size: 16px"> пикантная пепперони, увеличенная порция моцареллы,<br> томаты, томатный соус</a>
+  <a id="SecondContent" class="left" style="font-size: 18px"> пикантная пепперони, увеличенная порция моцареллы,<br> томаты, томатный соус</a>
   <p align="center" style="font-size: 30px">размер: </p>
 </div>
 </div>
 
 
-<div class="blok-center3">
+<div class="blok-center3" style="font-size: 18px" >
 <div class="container">
 <form>
   <div class="blok-center5">
@@ -135,13 +135,13 @@
 </div>
 </div>
 
-<div class="blok-center4">
+<div  class="blok-center4">
  
     <div class="checkbox">
   <input id="checkbox" type="checkbox" name="checkbox" value="checkbox">
   <label for="checkbox">
     <img id='FirstDopImg' src='images\doping\jalapeno.png'/>
-    <span id="FirstDoping" style="font-size: 24px"><p id="FirstDopText">халапеньо</p></span>
+    <span id="FirstDoping" style="line-height: 20px"><p  id="FirstDopText">халапеньо<br>39₽<br>29₽</p></span>
   </label>
     </div>
   
@@ -149,7 +149,7 @@
   <input id="checkbox2" type="checkbox" name="checkbox" value="checkbox2">
   <label for="checkbox2">
     <img id='SecondDopImg' src='images\doping\ham.png'/>
-    <span id='SecondDoping' style="font-size: 24px"><p id="SecondDopText">ветчина</p></span>
+    <span id='SecondDoping' style="line-height: 20px"><p id="SecondDopText">ветчина<br>59₽<br>29₽</p></span>
   </label>
     </div>
   
@@ -157,7 +157,7 @@
   <input id="checkbox3" type="checkbox" name="checkbox" value="checkbox3">
   <label for="checkbox3">
     <img id='ThirdDopImg' src='images\doping\chedr.png'/>
-    <span id='ThirdDoping' style="font-size: 24px"><p id='ThirdDopText'>чеддер</p></span>
+    <span id='ThirdDoping' style="line-height: 20px"><p id='ThirdDopText'>  чеддер<br>49₽<br>29₽</p></span>
   </label>
     </div>
   </div>
@@ -192,20 +192,20 @@
 
 			document.getElementById("bigPizza").onclick = function() {
         document.getElementById("pizzaImage").src = "images/Pepperoni0.png";
-        document.getElementById("cent").innerHTML = 500 + sumcentdop;  //менять cent и цифру(это цена)
-        document.getElementById("FirstContent").innerHTML = "30 см, традиционное тесто, 610 г"; //менять этот текст
+        document.getElementById("cent").innerHTML = 575 + sumcentdop;  //менять cent и цифру(это цена)
+        document.getElementById("FirstContent").innerHTML = "35 см, традиционное тесто, 800 г"; //менять этот текст
 			}
 
 			document.getElementById("midPizza").onclick = function() {
         document.getElementById("pizzaImage").src = "images/Pepperoni1.png";
-        document.getElementById("cent").innerHTML = 300 + sumcentdop;  //менять cent и цифру(это цена)
-        document.getElementById("FirstContent").innerHTML = "60 см, традиционное тесто, 800 г"; //менять этот текст
+        document.getElementById("cent").innerHTML = 435 + sumcentdop;  //менять cent и цифру(это цена)
+        document.getElementById("FirstContent").innerHTML = "30 см, традиционное тесто, 610 г"; //менять этот текст
 			}
 
 			document.getElementById("smallPizza").onclick = function() {
         document.getElementById("pizzaImage").src = "images/Pepperoni2.png";
-        document.getElementById("cent").innerHTML = 123 + sumcentdop;  //менять cent и цифру(это цена)
-        document.getElementById("FirstContent").innerHTML = "3099 см, традиционное тесто, 610 г";  //менять этот текст
+        document.getElementById("cent").innerHTML = 245 + sumcentdop;  //менять cent и цифру(это цена)
+        document.getElementById("FirstContent").innerHTML = "25 см, традиционное тесто, 410 г";  //менять этот текст
       }
       
       /***********      Менять чекбоксы !    *******************/
@@ -213,43 +213,43 @@
       document.getElementById("checkbox").onclick = function() {
         if(document.getElementById("checkbox").checked){
           let cent = Number(document.getElementById("cent").innerHTML);
-          sumcentdop += 12;
-          document.getElementById("cent").innerHTML = cent + 12;     //менять cent и цифру(это цена) допинга
+          sumcentdop += 39;
+          document.getElementById("cent").innerHTML = cent + 39;     //менять cent и цифру(это цена) допинга
         } else{
           let cent = Number(document.getElementById("cent").innerHTML);
-          sumcentdop -= 12;
-          document.getElementById("cent").innerHTML = cent - 12;         //менять cent и цифру(это цена допинга)
+          sumcentdop -= 39;
+          document.getElementById("cent").innerHTML = cent - 39;         //менять cent и цифру(это цена допинга)
         }
       }
 /***********      Менять чекбоксы !    *******************/
       document.getElementById("checkbox2").onclick = function() {
         if(document.getElementById("checkbox2").checked){
           let cent = Number(document.getElementById("cent").innerHTML);
-          sumcentdop += 12;
-          document.getElementById("cent").innerHTML = cent + 12;          //менять cent и цифру(это цена допинга)
+          sumcentdop += 59;
+          document.getElementById("cent").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
         } else{
           let cent = Number(document.getElementById("cent").innerHTML);
-          sumcentdop -= 12;
-          document.getElementById("cent").innerHTML = cent - 12;              //менять cent и цифру(это цена допинга)
+          sumcentdop -= 59;
+          document.getElementById("cent").innerHTML = cent - 59;              //менять cent и цифру(это цена допинга)
         }
       }
 /***********      Менять чекбоксы !    *******************/
       document.getElementById("checkbox3").onclick = function() {
         if(document.getElementById("checkbox3").checked){
           let cent = Number(document.getElementById("cent").innerHTML);
-          sumcentdop += 12;
-          document.getElementById("cent").innerHTML = cent + 12;          //менять cent и цифру(это цена допинга)
+          sumcentdop += 49;
+          document.getElementById("cent").innerHTML = cent + 49;          //менять cent и цифру(это цена допинга)
         } else{
           let cent = Number(document.getElementById("cent").innerHTML);
-          sumcentdop -= 12;
-          document.getElementById("cent").innerHTML = cent - 12;            //менять cent и цифру(это цена допинга)
+          sumcentdop -= 49;
+          document.getElementById("cent").innerHTML = cent - 49;            //менять cent и цифру(это цена допинга)
         }
       }
 
     }
 </script>
                                                             <!--Дефолтную цену указать-->
-<a class="shine-button">Добавить в корзину за <b id="cent">123</b>$</a>  <!---- //менять cent (цифру добавлять) -->
+<a class="shine-button">Добавить в корзину за <b id="cent">245</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
 
 
 <div id="stretcher"></div>
@@ -277,7 +277,7 @@
 
 
 <div class="blok-center2">
-  <p id="FirstContent" style="font-size: 24px">30 см, традиционное тесто, 500 г</p>
+  <p id="FirstContent1" style="font-size: 24px">25 см, традиционное тесто, 340 г</p>
 <div style="line-height: 13px">
   <a id="SecondContent" style="font-size: 16px">ветчина, моцарелла, соус альфредо</a>
   <p align="center" style="font-size: 30px">размер: </p>
@@ -306,7 +306,7 @@
   <input id="checkbox4" type="checkbox" name="checkbox" value="checkbox4">
   <label for="checkbox4">
     <img id='FirstDopImg' src='images\doping\bacon.png'/>
-    <span id="FirstDoping" style="font-size: 24px"><p id="FirstDopText">бекон</p></span>
+    <span id="FirstDoping" style="line-height: 20px"><p  id="FirstDopText">бекон<br>59₽<br>29₽</p></span>
   </label>
     </div>
   
@@ -314,7 +314,7 @@
   <input id="checkbox5" type="checkbox" name="checkbox" value="checkbox5">
   <label for="checkbox5">
     <img id='SecondDopImg' src='images\doping\chicken.png'/>
-    <span id='SecondDoping' style="font-size: 24px"><p id="SecondDopText">цыпленок</p></span>
+    <span id='SecondDoping' style="line-height: 20px"><p id="SecondDopText">цыпленок<br>59₽<br>29₽</p></span>
   </label>
     </div>
   
@@ -322,7 +322,7 @@
   <input id="checkbox6" type="checkbox" name="checkbox" value="checkbox6">
   <label for="checkbox6">
     <img id='ThirdDopImg' src='images\doping\chedr.png'/>
-    <span id='ThirdDoping' style="font-size: 24px"><p id='ThirdDopText'>чеддер</p></span>
+    <span id='ThirdDoping' style="line-height: 20px"><p id='ThirdDopText'>чеддер<br>49₽<br>29₽</p></span>
   </label>
     </div>
   </div>
@@ -337,7 +337,11 @@
 
 
 <script type="text/javascript">
-	
+	{
+
+
+    let sumcentdop = 0;
+
 			document.getElementById("modalb1").onclick = function() {
 				document.getElementById("modal1").style.display = "block";
 				 
@@ -350,22 +354,72 @@
 /*							--------Кнопки размеров-----	
 									тут для каждого размера закинь картинку													*/
 									
+
+
 			document.getElementById("bigPizza1").onclick = function() {
-				document.getElementById("pizzaImage1").src = "images/Meaty0.png";
+        document.getElementById("pizzaImage1").src = "images/Meaty0.png";
+        document.getElementById("cent1").innerHTML = 575 + sumcentdop;  //менять cent и цифру(это цена)
+        document.getElementById("FirstContent1").innerHTML = "35 см, традиционное тесто, 660 г"; //менять этот текст
 			}
 
 			document.getElementById("midPizza1").onclick = function() {
-				document.getElementById("pizzaImage1").src = "images/Meaty1.png";
+        document.getElementById("pizzaImage1").src = "images/Meaty1.png";
+        document.getElementById("cent1").innerHTML = 435 + sumcentdop;  //менять cent и цифру(это цена)
+        document.getElementById("FirstContent1").innerHTML = "30 см, традиционное тесто, 500 г"; //менять этот текст
 			}
 
 			document.getElementById("smallPizza1").onclick = function() {
-				document.getElementById("pizzaImage1").src = "images/Meaty2.png";
-			}
+        document.getElementById("pizzaImage1").src = "images/Meaty2.png";
+        document.getElementById("cent1").innerHTML = 295 + sumcentdop;  //менять cent и цифру(это цена)
+        document.getElementById("FirstContent1").innerHTML = "25 см, традиционное тесто, 340 г";  //менять этот текст
+      }
+      
+      /***********      Менять чекбоксы !    *******************/
 
-
+      document.getElementById("checkbox4").onclick = function() {
+        if(document.getElementById("checkbox4").checked){
+          let cent = Number(document.getElementById("cent1").innerHTML);
+          sumcentdop += 59;
+          document.getElementById("cent1").innerHTML = cent + 59;     //менять cent и цифру(это цена) допинга
+        } else{
+          let cent = Number(document.getElementById("cent1").innerHTML);
+          sumcentdop -= 59;
+          document.getElementById("cent1").innerHTML = cent - 59;         //менять cent и цифру(это цена допинга)
+        }
+      }
+/***********      Менять чекбоксы !    *******************/
+      document.getElementById("checkbox5").onclick = function() {
+        if(document.getElementById("checkbox5").checked){
+          let cent = Number(document.getElementById("cent1").innerHTML);
+          sumcentdop += 59;
+          document.getElementById("cent1").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+        } else{
+          let cent = Number(document.getElementById("cent1").innerHTML);
+          sumcentdop -= 59;
+          document.getElementById("cent1").innerHTML = cent - 59;              //менять cent и цифру(это цена допинга)
+        }
+      }
+/***********      Менять чекбоксы !    *******************/
+      document.getElementById("checkbox6").onclick = function() {
+        if(document.getElementById("checkbox6").checked){
+          let cent = Number(document.getElementById("cent1").innerHTML);
+          sumcentdop += 49;
+          document.getElementById("cent1").innerHTML = cent + 49;          //менять cent и цифру(это цена допинга)
+        } else{
+          let cent = Number(document.getElementById("cent1").innerHTML);
+          sumcentdop -= 49;
+          document.getElementById("cent1").innerHTML = cent - 49;            //менять cent и цифру(это цена допинга)
+        }
+      }
+}
+    
 </script>
+                                                            <!--Дефолтную цену указать-->
+<a class="shine-button">Добавить в корзину за <b id="cent1">295</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
 
-<a class="shine-button">Добавить в корзину за 100$</a>
+
+
+
 
 <div id="stretcher"></div>
 <p></p>
@@ -392,7 +446,7 @@
 
 
 <div class="blok-center2">
-  <p id="FirstContent" style="font-size: 24px">30 см, традиционное тесто, 540 г</p>
+  <p id="FirstContent2" style="font-size: 24px">25 см, традиционное тесто, 370 г</p>
 <div style="line-height: 13px">
   <a id="SecondContent" style="font-size: 16px">цыпленок,  кисло-сладкий соус, моцарелла, томатный соус</a>
   <p align="center" style="font-size: 30px">размер: </p>
@@ -420,16 +474,16 @@
     <div class="checkbox">
   <input id="checkbox7" type="checkbox" name="checkbox" value="checkbox7">
   <label for="checkbox7">
-    <img id='FirstDopImg' src='images\doping\jalapeno.png'/>
-    <span id="FirstDoping" style="font-size: 24px"><p id="FirstDopText">халапеньо</p></span>
-  </label>
+    <img id='FirstDopImg' src='images\doping\sweet pepper.png'/>
+    <span id="FirstDoping" style="line-height: 20px"><p id="FirstDopText">сладкий перец<br>29₽</p></span>
+  </label>  
     </div>
   
     <div class="checkbox">
   <input id="checkbox8" type="checkbox" name="checkbox" value="checkbox8">
   <label for="checkbox8">
     <img id='SecondDopImg' src='images\doping\ham.png'/>
-    <span id='SecondDoping' style="font-size: 24px"><p id="SecondDopText">ветчина</p></span>
+    <span id='SecondDoping' style="line-height: 20px"><p id="SecondDopText">ветчина<br>59₽</p></span>
   </label>
     </div>
   
@@ -437,7 +491,7 @@
   <input id="checkbox9" type="checkbox" name="checkbox" value="checkbox9">
   <label for="checkbox9">
     <img id='ThirdDopImg' src='images\doping\macarela.png'/>
-    <span id='ThirdDoping' style="font-size: 24px"><p id='ThirdDopText'>моцарелла</p></span>
+    <span id='ThirdDoping' style="line-height: 20px"><p id='ThirdDopText'>моцарелла<br>59₽</p></span>
   </label>
     </div>
   </div>
@@ -452,7 +506,10 @@
 
 
 <script type="text/javascript">
-	
+{
+
+let sumcentdop = 0;
+
 			document.getElementById("modalb2").onclick = function() {
 				document.getElementById("modal2").style.display = "block";
 				 
@@ -465,22 +522,67 @@
 /*							--------Кнопки размеров-----	
 									тут для каждого размера закинь картинку													*/
 									
-			document.getElementById("bigPizza2").onclick = function() {
-				document.getElementById("pizzaImage2").src = "images/Sweet and sour0.png";
-			}
 
-			document.getElementById("midPizza2").onclick = function() {
-				document.getElementById("pizzaImage2").src = "images/Sweet and sour1.png";
-			}
+document.getElementById("bigPizza2").onclick = function() {
+    document.getElementById("pizzaImage2").src = "images/Sweet and sour0.png";
+    document.getElementById("cent2").innerHTML = 575 + sumcentdop;  //менять cent и цифру(это цена)
+    document.getElementById("FirstContent2").innerHTML = "35 см, традиционное тесто, 720 г"; //менять этот текст
+  }
 
-			document.getElementById("smallPizza2").onclick = function() {
-				document.getElementById("pizzaImage2").src = "images/Sweet and sour2.png";
-			}
+  document.getElementById("midPizza2").onclick = function() {
+    document.getElementById("pizzaImage2").src = "images/Sweet and sour1.png";
+    document.getElementById("cent2").innerHTML = 435 + sumcentdop;  //менять cent и цифру(это цена)
+    document.getElementById("FirstContent2").innerHTML = "30 см, традиционное тесто, 540 г"; //менять этот текст
+  }
 
+  document.getElementById("smallPizza2").onclick = function() {
+    document.getElementById("pizzaImage2").src = "images/Sweet and sour2.png";
+    document.getElementById("cent2").innerHTML = 295 + sumcentdop;  //менять cent и цифру(это цена)
+    document.getElementById("FirstContent2").innerHTML = "25 см, традиционное тесто, 370 г";  //менять этот текст
+  }
+  
+  /***********      Менять чекбоксы !    *******************/
+
+  document.getElementById("checkbox7").onclick = function() {
+    if(document.getElementById("checkbox7").checked){
+      let cent = Number(document.getElementById("cent2").innerHTML);
+      sumcentdop += 29;
+      document.getElementById("cent2").innerHTML = cent + 29;     //менять cent и цифру(это цена) допинга
+    } else{
+      let cent = Number(document.getElementById("cent2").innerHTML);
+      sumcentdop -= 29;
+      document.getElementById("cent2").innerHTML = cent - 29;         //менять cent и цифру(это цена допинга)
+    }
+  }
+/***********      Менять чекбоксы !    *******************/
+  document.getElementById("checkbox8").onclick = function() {
+    if(document.getElementById("checkbox8").checked){
+      let cent = Number(document.getElementById("cent2").innerHTML);
+      sumcentdop += 59;
+      document.getElementById("cent2").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+    } else{
+      let cent = Number(document.getElementById("cent2").innerHTML);
+      sumcentdop -= 59;
+      document.getElementById("cent2").innerHTML = cent - 59;              //менять cent и цифру(это цена допинга)
+    }
+  }
+/***********      Менять чекбоксы !    *******************/
+  document.getElementById("checkbox9").onclick = function() {
+    if(document.getElementById("checkbox9").checked){
+      let cent = Number(document.getElementById("cent2").innerHTML);
+      sumcentdop += 59;
+      document.getElementById("cent2").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+    } else{
+      let cent = Number(document.getElementById("cent2").innerHTML);
+      sumcentdop -= 59;
+      document.getElementById("cent2").innerHTML = cent - 59;            //менять cent и цифру(это цена допинга)
+    }
+  }
+}
 
 </script>
-
-<a class="shine-button">Добавить в корзину за 100$</a>
+                                                        <!--Дефолтную цену указать-->
+<a class="shine-button">Добавить в корзину за <b id="cent2">295</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
 
 <div id="stretcher"></div>
 <p></p>
@@ -507,7 +609,7 @@
 
 
 <div class="blok-center2">
-  <p id="FirstContent" style="font-size: 24px">30 см, традиционное тесто, 600 г</p>
+  <p id="FirstContent3" style="font-size: 24px">25 см, традиционное тесто, 410 г</p>
 <div style="line-height: 13px">
   <a id="SecondContent" style="font-size: 16px">ветчина, шампиньоны, увеличенная порция моцареллы, томатный соус</a>
   <p align="center" style="font-size: 30px">размер: </p>
@@ -536,15 +638,15 @@
   <input id="checkbox10" type="checkbox" name="checkbox" value="checkbox10">
   <label for="checkbox10">
     <img id='FirstDopImg' src='images\doping\jalapeno.png'/>
-    <span id="FirstDoping" style="font-size: 24px"><p id="FirstDopText">халапеньо</p></span>
+    <span id="FirstDoping" style="line-height: 20px"><p id="FirstDopText">шампиньоны<br>39₽</p></span>
   </label>
     </div>
-  
+   
     <div class="checkbox">
   <input id="checkbox11" type="checkbox" name="checkbox" value="checkbox11">
   <label for="checkbox11">
     <img id='SecondDopImg' src='images\doping\chicken.png'/>
-    <span id='SecondDoping' style="font-size: 24px"><p id="SecondDopText">цыпленок</p></span>
+    <span id='SecondDoping' style="line-height: 20px"><p id="SecondDopText">цыпленок<br>59₽</p></span>
   </label>
     </div>
   
@@ -552,7 +654,7 @@
   <input id="checkbox12" type="checkbox" name="checkbox" value="checkbox12">
   <label for="checkbox12">
     <img id='ThirdDopImg' src='images\doping\chedr.png'/>
-    <span id='ThirdDoping' style="font-size: 24px"><p id='ThirdDopText'>чеддер</p></span>
+    <span id='ThirdDoping' style="line-height: 20px"><p id='ThirdDopText'>чеддер<br>49₽</p></span>
   </label>
     </div>
   </div>
@@ -567,7 +669,10 @@
 
 
 <script type="text/javascript">
-	
+{
+  
+let sumcentdop = 0
+
 			document.getElementById("modalb3").onclick = function() {
 				document.getElementById("modal3").style.display = "block";
 				 
@@ -580,22 +685,68 @@
 /*							--------Кнопки размеров-----	
 									тут для каждого размера закинь картинку													*/
 									
-			document.getElementById("bigPizza3").onclick = function() {
-				document.getElementById("pizzaImage3").src = "images/Ham and mushrooms0.png";
-			}
+; // это общяя цена с допингов, он аизменяется при нажатии || ее не менять
 
-			document.getElementById("midPizza3").onclick = function() {
-				document.getElementById("pizzaImage3").src = "images/Ham and mushrooms1.png";
-			}
+    document.getElementById("bigPizza3").onclick = function() {
+      document.getElementById("pizzaImage3").src = "images/Ham and mushrooms0.png";
+      document.getElementById("cent3").innerHTML = 615 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent3").innerHTML = "35 см, традиционное тесто, 790 г"; //менять этот текст
+    }
 
-			document.getElementById("smallPizza3").onclick = function() {
-				document.getElementById("pizzaImage3").src = "images/Ham and mushrooms2.png";
-			}
+    document.getElementById("midPizza3").onclick = function() {
+      document.getElementById("pizzaImage3").src = "images/Ham and mushrooms1.png";
+      document.getElementById("cent3").innerHTML = 475 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent3").innerHTML = "30 см, традиционное тесто, 600 г"; //менять этот текст
+    }
 
+    document.getElementById("smallPizza3").onclick = function() {
+      document.getElementById("pizzaImage3").src = "images/Ham and mushrooms2.png";
+      document.getElementById("cent3").innerHTML = 325 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent3").innerHTML = "25 см, традиционное тесто, 410 г";  //менять этот текст
+    }
+    
+    /***********      Менять чекбоксы !    *******************/
 
+    document.getElementById("checkbox10").onclick = function() {
+      if(document.getElementById("checkbox10").checked){
+        let cent = Number(document.getElementById("cent3").innerHTML);
+        sumcentdop += 39;
+        document.getElementById("cent3").innerHTML = cent + 39;     //менять cent и цифру(это цена) допинга
+      } else{
+        let cent = Number(document.getElementById("cent3").innerHTML);
+        sumcentdop -= 39;
+        document.getElementById("cent3").innerHTML = cent - 39;         //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox11").onclick = function() {
+      if(document.getElementById("checkbox11").checked){
+        let cent = Number(document.getElementById("cent3").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent3").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent3").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent3").innerHTML = cent - 59;              //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox12").onclick = function() {
+      if(document.getElementById("checkbox12").checked){
+        let cent = Number(document.getElementById("cent3").innerHTML);
+        sumcentdop += 49;
+        document.getElementById("cent3").innerHTML = cent + 49;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent3").innerHTML);
+        sumcentdop -= 49;
+        document.getElementById("cent3").innerHTML = cent - 49;            //менять cent и цифру(это цена допинга)
+      }
+    }
+
+  }
 </script>
-
-<a class="shine-button">Добавить в корзину за 100$</a>
+                                                          <!--Дефолтную цену указать-->
+<a class="shine-button">Добавить в корзину за <b id="cent3">325</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
 
 <div id="stretcher"></div>
 <p></p>
@@ -622,7 +773,7 @@
 
 
 <div class="blok-center2">
-  <p id="FirstContent" style="font-size: 24px">30 см, традиционное тесто, 650 г</p>
+  <p id="FirstContent4" style="font-size: 24px">25 см, традиционное тесто, 440 г</p>
 <div style="line-height: 13px">
   <a id="SecondContent" style="font-size: 16px">цыпленок, ананасы, моцарелла, томатный соус</a>
   <p align="center" style="font-size: 30px">размер: </p>
@@ -651,7 +802,7 @@
   <input id="checkbox13" type="checkbox" name="checkbox" value="checkbox13">
   <label for="checkbox13">
     <img id='FirstDopImg' src='images\doping\macarela.png'/>
-    <span id="FirstDoping" style="font-size: 24px"><p id="FirstDopText">моцарелла</p></span>
+    <span id="FirstDoping" style="line-height: 20px"><p id="FirstDopText">моцарелла<br>59₽</p></span>
   </label>
     </div>
   
@@ -659,7 +810,7 @@
   <input id="checkbox14" type="checkbox" name="checkbox" value="checkbox14">
   <label for="checkbox14">
     <img id='SecondDopImg' src='images\doping\ham.png'/>
-    <span id='SecondDoping' style="font-size: 24px"><p id="SecondDopText">ветчина</p></span>
+    <span id='SecondDoping' style="line-height: 20px"><p id="SecondDopText">ветчина<br>59₽</p></span>
   </label>
     </div>
   
@@ -667,7 +818,7 @@
   <input id="checkbox15" type="checkbox" name="checkbox" value="checkbox15">
   <label for="checkbox15">
     <img id='ThirdDopImg' src='images\doping\chicken.png'/>
-    <span id='ThirdDoping' style="font-size: 24px"><p id='ThirdDopText'>цыпленок</p></span>
+    <span id='ThirdDoping' style="line-height: 20px"><p id='ThirdDopText'>цыпленок<br>59₽</p></span>
   </label>
     </div>
   </div>
@@ -683,6 +834,10 @@
 
 <script type="text/javascript">
 	
+  {
+
+  
+let sumcentdop = 0; 
 			document.getElementById("modalb4").onclick = function() {
 				document.getElementById("modal4").style.display = "block";
 				 
@@ -695,22 +850,67 @@
 /*							--------Кнопки размеров-----	
 									тут для каждого размера закинь картинку													*/
 									
-			document.getElementById("bigPizza4").onclick = function() {
-				document.getElementById("pizzaImage4").src = "images/hawaiian0.png";
-			}
+                 
+    document.getElementById("bigPizza4").onclick = function() {
+      document.getElementById("pizzaImage4").src = "images/hawaiian0.png";
+      document.getElementById("cent4").innerHTML = 695 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent4").innerHTML = "35 см, традиционное тесто, 870 г"; //менять этот текст
+    }
 
-			document.getElementById("midPizza4").onclick = function() {
-				document.getElementById("pizzaImage4").src = "images/hawaiian1.png";
-			}
+    document.getElementById("midPizza4").onclick = function() {
+      document.getElementById("pizzaImage4").src = "images/hawaiian1.png";
+      document.getElementById("cent4").innerHTML = 565 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent4").innerHTML = "30 см, традиционное тесто, 650 г"; //менять этот текст
+    }
 
-			document.getElementById("smallPizza4").onclick = function() {
-				document.getElementById("pizzaImage4").src = "images/hawaiian2.png";
-			}
+    document.getElementById("smallPizza4").onclick = function() {
+      document.getElementById("pizzaImage4").src = "images/hawaiian2.png";
+      document.getElementById("cent4").innerHTML = 375 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent4").innerHTML = "25 см, традиционное тесто, 440 г";  //менять этот текст
+    }
+    
+    /***********      Менять чекбоксы !    *******************/
 
+    document.getElementById("checkbox13").onclick = function() {
+      if(document.getElementById("checkbox13").checked){
+        let cent = Number(document.getElementById("cent4").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent4").innerHTML = cent + 59;     //менять cent и цифру(это цена) допинга
+      } else{
+        let cent = Number(document.getElementById("cent4").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent4").innerHTML = cent - 59;         //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox14").onclick = function() {
+      if(document.getElementById("checkbox14").checked){
+        let cent = Number(document.getElementById("cent4").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent4").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent4").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent4").innerHTML = cent - 59;              //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox15").onclick = function() {
+      if(document.getElementById("checkbox15").checked){
+        let cent = Number(document.getElementById("cent4").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent4").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent4").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent4").innerHTML = cent - 59;            //менять cent и цифру(это цена допинга)
+      }
+    }
 
+  }
 </script>
-
-<a class="shine-button">Добавить в корзину за 100$</a>
+                                                          <!--Дефолтную цену указать-->
+<a class="shine-button">Добавить в корзину за <b id="cent4">375</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
 
 <div id="stretcher"></div>
 <p></p>
@@ -737,7 +937,7 @@
   
   
   <div class="blok-center2">
-    <p id="FirstContent" style="font-size: 24px">25 см, традиционное тесто, 480 г</p>
+    <p id="FirstContent5" style="font-size: 24px">25 см, традиционное тесто, 480 г</p>
   <div style="line-height: 13px">
     <a id="SecondContent" style="font-size: 16px">острый цыпленок, халапеньо, соус сальса, томаты, сладкий перец, кислый лук, моцарелла, томатный соус</a>
     <p align="center" style="font-size: 30px">размер: </p>
@@ -766,7 +966,7 @@
     <input id="checkbox16" type="checkbox" name="checkbox" value="checkbox16">
     <label for="checkbox16">
       <img id='FirstDopImg' src='images\doping\cherise.png'/>
-      <span id="FirstDoping" style="font-size: 24px"><p id="FirstDopText">чоризо</p></span>
+      <span id="FirstDoping" style="line-height: 20px"><p id="FirstDopText">чоризо<br>59₽</p></span>
     </label>
       </div>
     
@@ -774,7 +974,7 @@
     <input id="checkbox17" type="checkbox" name="checkbox" value="checkbox17">
     <label for="checkbox17">
       <img id='SecondDopImg' src='images\doping\chedr.png'/>
-      <span id='SecondDoping' style="font-size: 24px"><p id="SecondDopText">чеддер</p></span>
+      <span id='SecondDoping' style="line-height: 20px"><p id="SecondDopText">чеддер<br>49₽</p></span>
     </label>
       </div>
     
@@ -782,7 +982,7 @@
     <input id="checkbox18" type="checkbox" name="checkbox" value="checkbox18">
     <label for="checkbox18">
       <img id='ThirdDopImg' src='images\doping\macarela.png'/>
-      <span id='ThirdDoping' style="font-size: 24px"><p id='ThirdDopText'>моцарелла</p></span>
+      <span id='ThirdDoping' style="line-height: 20px"><p id='ThirdDopText'>моцарелла<br>59₽</p></span>
     </label>
       </div>
     </div>
@@ -810,22 +1010,70 @@
   /*							--------Кнопки размеров-----	
                     тут для каждого размера закинь картинку													*/
                     
-        document.getElementById("bigPizza5").onclick = function() {
-          document.getElementById("pizzaImage5").src = "images/Mexican0.png";
-        }
+                    {
+
   
-        document.getElementById("midPizza5").onclick = function() {
-          document.getElementById("pizzaImage5").src = "images/Mexican1.png";
-        }
-  
-        document.getElementById("smallPizza5").onclick = function() {
-          document.getElementById("pizzaImage5").src = "images/Mexican2.png";
-        }
-  
-  
-  </script>
-  
-  <a class="shine-button">Добавить в корзину за 100$</a>
+let sumcentdop = 0;
+    document.getElementById("bigPizza5").onclick = function() {
+      document.getElementById("pizzaImage5").src = "images/Mexican0.png";
+      document.getElementById("cent5").innerHTML = 745 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent5").innerHTML = "35 см, традиционное тесто, 960 г"; //менять этот текст
+    }
+
+    document.getElementById("midPizza5").onclick = function() {
+      document.getElementById("pizzaImage5").src = "images/Mexican1.png";
+      document.getElementById("cent5").innerHTML = 625 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent5").innerHTML = "30 см, традиционное тесто, 710 г"; //менять этот текст
+    }
+
+    document.getElementById("smallPizza5").onclick = function() {
+      document.getElementById("pizzaImage5").src = "images/Mexican2.png";
+      document.getElementById("cent5").innerHTML = 425 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent5").innerHTML = "25 см, традиционное тесто, 480 г";  //менять этот текст
+    }
+    
+    /***********      Менять чекбоксы !    *******************/
+
+    document.getElementById("checkbox16").onclick = function() {
+      if(document.getElementById("checkbox16").checked){
+        let cent = Number(document.getElementById("cent5").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent5").innerHTML = cent + 59;     //менять cent и цифру(это цена) допинга
+      } else{
+        let cent = Number(document.getElementById("cent5").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent5").innerHTML = cent - 59;         //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox17").onclick = function() {
+      if(document.getElementById("checkbox17").checked){
+        let cent = Number(document.getElementById("cent5").innerHTML);
+        sumcentdop += 49;
+        document.getElementById("cent5").innerHTML = cent + 49;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent5").innerHTML);
+        sumcentdop -= 49;
+        document.getElementById("cent5").innerHTML = cent - 49;              //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox18").onclick = function() {
+      if(document.getElementById("checkbox18").checked){
+        let cent = Number(document.getElementById("cent5").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent5").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent5").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent5").innerHTML = cent - 59;            //менять cent и цифру(это цена допинга)
+      }
+    }
+
+  }
+</script>
+                                                          <!--Дефолтную цену указать-->
+<a class="shine-button">Добавить в корзину за <b id="cent5">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -852,7 +1100,7 @@
   
   
   <div class="blok-center2">
-    <p id="FirstContent" style="font-size: 24px">30 см, традиционное тесто, 650 г</p>
+    <p id="FirstContent6" style="font-size: 24px">25 см, традиционное тесто, 430 г</p>
   <div style="line-height: 13px">
     <a id="SecondContent" style="font-size: 16px">лосось, томаты черри, соус песто, моцарелла, соус альфредо</a>
     <p align="center" style="font-size: 30px">размер: </p>
@@ -881,7 +1129,7 @@
     <input id="checkbox19" type="checkbox" name="checkbox" value="checkbox19">
     <label for="checkbox19">
       <img id='FirstDopImg' src='images\doping\olives.png'/>
-      <span id="FirstDoping" style="font-size: 24px"><p id="FirstDopText">маслины</p></span>
+      <span id="FirstDoping" style="line-height: 20px"><p id="FirstDopText">маслины<br>49₽</p></span>
     </label>
       </div>
     
@@ -889,7 +1137,7 @@
     <input id="checkbox20" type="checkbox" name="checkbox" value="checkbox20">
     <label for="checkbox20">
       <img id='SecondDopImg' src='images\doping\brynza.png'/>
-      <span id='SecondDoping' style="font-size: 24px"><p id="SecondDopText">брынза</p></span>
+      <span id='SecondDoping' style="line-height: 20px"><p id="SecondDopText">брынза<br>59₽</p></span>
     </label>
       </div>
     
@@ -897,7 +1145,7 @@
     <input id="checkbox21" type="checkbox" name="checkbox" value="checkbox21">
     <label for="checkbox21">
       <img id='ThirdDopImg' src='images\doping\chicken.png'/>
-      <span id='ThirdDoping' style="font-size: 24px"><p id='ThirdDopText'>цыпленок</p></span>
+      <span id='ThirdDoping' style="line-height: 20px"><p id='ThirdDopText'>цыпленок<br>59₽</p></span>
     </label>
       </div>
     </div>
@@ -912,7 +1160,10 @@
   
   
   <script type="text/javascript">
-    
+                    {
+
+  
+let sumcentdop = 0;    
         document.getElementById("modalb6").onclick = function() {
           document.getElementById("modal6").style.display = "block";
            
@@ -925,22 +1176,67 @@
   /*							--------Кнопки размеров-----	
                     тут для каждого размера закинь картинку													*/
                     
-        document.getElementById("bigPizza6").onclick = function() {
-          document.getElementById("pizzaImage6").src = "images/Tender salmon0.png";
-        }
-  
-        document.getElementById("midPizza6").onclick = function() {
-          document.getElementById("pizzaImage6").src = "images/Tender salmon1.png";
-        }
-  
-        document.getElementById("smallPizza6").onclick = function() {
-          document.getElementById("pizzaImage6").src = "images/Tender salmon2.png";
-        }
-  
-  
-  </script>
-  
-  <a class="shine-button">Добавить в корзину за 100$</a>
+
+    document.getElementById("bigPizza6").onclick = function() {
+      document.getElementById("pizzaImage6").src = "images/Tender salmon0.png";
+      document.getElementById("cent6").innerHTML = 865 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent6").innerHTML = "35 см, традиционное тесто, 880 г"; //менять этот текст
+    }
+
+    document.getElementById("midPizza6").onclick = function() {
+      document.getElementById("pizzaImage6").src = "images/Tender salmon1.png";
+      document.getElementById("cent6").innerHTML = 725 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent6").innerHTML = "30 см, традиционное тесто, 650 г"; //менять этот текст
+    }
+
+    document.getElementById("smallPizza6").onclick = function() {
+      document.getElementById("pizzaImage6").src = "images/Tender salmon2.png";
+      document.getElementById("cent6").innerHTML = 465 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent6").innerHTML = "25 см, традиционное тесто, 430 г";  //менять этот текст
+    }
+    
+    /***********      Менять чекбоксы !    *******************/
+
+    document.getElementById("checkbox19").onclick = function() {
+      if(document.getElementById("checkbox19").checked){
+        let cent = Number(document.getElementById("cent6").innerHTML);
+        sumcentdop += 49;
+        document.getElementById("cent6").innerHTML = cent + 49;     //менять cent и цифру(это цена) допинга
+      } else{
+        let cent = Number(document.getElementById("cent6").innerHTML);
+        sumcentdop -= 49;
+        document.getElementById("cent6").innerHTML = cent - 49;         //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox20").onclick = function() {
+      if(document.getElementById("checkbox20").checked){
+        let cent = Number(document.getElementById("cent6").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent6").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent6").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent6").innerHTML = cent - 59;              //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox21").onclick = function() {
+      if(document.getElementById("checkbox21").checked){
+        let cent = Number(document.getElementById("cent6").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent6").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent6").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent6").innerHTML = cent - 59;            //менять cent и цифру(это цена допинга)
+      }
+    }
+
+  }
+</script>
+                                                          <!--Дефолтную цену указать-->
+<a class="shine-button">Добавить в корзину за <b id="cent6">465</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -967,7 +1263,7 @@
   
   
   <div class="blok-center2">
-    <p id="FirstContent" style="font-size: 24px">30 см, традиционное тесто, 640 г</p>
+    <p id="FirstContent7" style="font-size: 24px">25 см, традиционное тесто, 480 г</p>
   <div style="line-height: 13px">
     <a id="SecondContent" style="font-size: 16px">Свежие листья салата айсберг, цыпленок, томаты черри, сыры чеддер и пармезан, моцарелла, соус альфредо, соус цезарь</a>
     <p align="center" style="font-size: 30px">размер: </p>
@@ -996,7 +1292,7 @@
     <input id="checkbox22" type="checkbox" name="checkbox" value="checkbox22">
     <label for="checkbox22">
       <img id='FirstDopImg' src='images\doping\jalapeno.png'/>
-      <span id="FirstDoping" style="font-size: 24px"><p id="FirstDopText">халапеньо</p></span>
+      <span id="FirstDoping" style="line-height: 20px"><p id="FirstDopText">халапеньо<br>39₽</p></span>
     </label>
       </div>
     
@@ -1004,7 +1300,7 @@
     <input id="checkbox23" type="checkbox" name="checkbox" value="checkbox23">
     <label for="checkbox23">
       <img id='SecondDopImg' src='images\doping\cherise.png'/>
-      <span id='SecondDoping' style="font-size: 24px"><p id="SecondDopText">чоризо</p></span>
+      <span id='SecondDoping' style="line-height: 20px"><p id="SecondDopText">чоризо<br>59₽</p></span>
     </label>
       </div>
     
@@ -1012,7 +1308,7 @@
     <input id="checkbox24" type="checkbox" name="checkbox" value="checkbox24">
     <label for="checkbox24">
       <img id='ThirdDopImg' src='images\doping\chicken.png'/>
-      <span id='ThirdDoping' style="font-size: 24px"><p id='ThirdDopText'>цыпленок</p></span>
+      <span id='ThirdDoping' style="line-height: 20px"><p id='ThirdDopText'>цыпленок<br>59₽</p></span>
     </label>
       </div>
     </div>
@@ -1040,22 +1336,70 @@
   /*							--------Кнопки размеров-----	
                     тут для каждого размера закинь картинку													*/
                     
-        document.getElementById("bigPizza7").onclick = function() {
-          document.getElementById("pizzaImage7").src = "images/caesar0.png";
-        }
+                    {
+
   
-        document.getElementById("midPizza7").onclick = function() {
-          document.getElementById("pizzaImage7").src = "images/caesar1.png";
-        }
-  
-        document.getElementById("smallPizza7").onclick = function() {
-          document.getElementById("pizzaImage7").src = "images/caesar2.png";
-        }
-  
-  
-  </script>
-  
-  <a class="shine-button">Добавить в корзину за 100$</a>
+let sumcentdop = 0;
+    document.getElementById("bigPizza7").onclick = function() {
+      document.getElementById("pizzaImage7").src = "images/caesar0.png";
+      document.getElementById("cent7").innerHTML = 745 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent7").innerHTML = "35 см, традиционное тесто, 870 г"; //менять этот текст
+    }
+
+    document.getElementById("midPizza7").onclick = function() {
+      document.getElementById("pizzaImage7").src = "images/caesar1.png";
+      document.getElementById("cent7").innerHTML = 625+ sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent7").innerHTML = "30 см, традиционное тесто, 640 г"; //менять этот текст
+    }
+
+    document.getElementById("smallPizza7").onclick = function() {
+      document.getElementById("pizzaImage7").src = "images/caesar2.png";
+      document.getElementById("cent7").innerHTML = 425 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent7").innerHTML = "25 см, традиционное тесто, 480 г";  //менять этот текст
+    }
+    
+    /***********      Менять чекбоксы !    *******************/
+
+    document.getElementById("checkbox22").onclick = function() {
+      if(document.getElementById("checkbox22").checked){
+        let cent = Number(document.getElementById("cent7").innerHTML);
+        sumcentdop += 39;
+        document.getElementById("cent7").innerHTML = cent + 39;     //менять cent и цифру(это цена) допинга
+      } else{
+        let cent = Number(document.getElementById("cent7").innerHTML);
+        sumcentdop -= 39;
+        document.getElementById("cent7").innerHTML = cent - 39;         //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox23").onclick = function() {
+      if(document.getElementById("checkbox23").checked){
+        let cent = Number(document.getElementById("cent7").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent7").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent7").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent7").innerHTML = cent - 59;              //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox24").onclick = function() {
+      if(document.getElementById("checkbox24").checked){
+        let cent = Number(document.getElementById("cent7").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent7").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent7").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent7").innerHTML = cent - 59;            //менять cent и цифру(это цена допинга)
+      }
+    }
+
+  }
+</script>
+                                                          <!--Дефолтную цену указать-->
+<a class="shine-button">Добавить в корзину за <b id="cent7">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -1082,7 +1426,7 @@
   
   
   <div class="blok-center2">
-    <p id="FirstContent" style="font-size: 24px">30 см, традиционное тесто, 590 г</p>
+    <p id="FirstContent8" style="font-size: 24px">25 см, традиционное тесто, 390 г</p>
   <div style="line-height: 13px">
     <a id="SecondContent" style="font-size: 16px">цыпленок, острая чоризо, соус бургер, сладкий перец, красный лук, томаты, моцарелла, соус ранч, чеснок</a>
     <p align="center" style="font-size: 30px">размер: </p>
@@ -1111,7 +1455,7 @@
     <input id="checkbox25" type="checkbox" name="checkbox" value="checkbox25">
     <label for="checkbox25">
       <img id='FirstDopImg' src='images\doping\jalapeno.png'/>
-      <span id="FirstDoping" style="font-size: 24px"><p id="FirstDopText">халапеньо</p></span>
+      <span id="FirstDoping" style="line-height: 20px"><p id="FirstDopText">халапеньо<br>39₽</p></span>
     </label>
       </div>
     
@@ -1119,7 +1463,7 @@
     <input id="checkbox26" type="checkbox" name="checkbox" value="checkbox26">
     <label for="checkbox26">
       <img id='SecondDopImg' src='images\doping\chicken.png'/>
-      <span id='SecondDoping' style="font-size: 24px"><p id="SecondDopText">цыпленок</p></span>
+      <span id='SecondDoping' style="line-height: 20px"><p id="SecondDopText">цыпленок<br>59₽</p></span>
     </label>
       </div>
     
@@ -1127,7 +1471,7 @@
     <input id="checkbox27" type="checkbox" name="checkbox" value="checkbox27">
     <label for="checkbox27">
       <img id='ThirdDopImg' src='images\doping\macarela.png'/>
-      <span id='ThirdDoping' style="font-size: 24px"><p id='ThirdDopText'>моцарелла</p></span>
+      <span id='ThirdDoping' style="line-height: 20px"><p id='ThirdDopText'>моцарелла<br>59₽</p></span>
     </label>
       </div>
     </div>
@@ -1142,7 +1486,10 @@
   
   
   <script type="text/javascript">
-    
+                    {
+
+  
+let sumcentdop = 0;    
         document.getElementById("modalb8").onclick = function() {
           document.getElementById("modal8").style.display = "block";
            
@@ -1155,22 +1502,67 @@
   /*							--------Кнопки размеров-----	
                     тут для каждого размера закинь картинку													*/
                     
-        document.getElementById("bigPizza8").onclick = function() {
-          document.getElementById("pizzaImage8").src = "images/Arriva0.png";
-        }
-  
-        document.getElementById("midPizza8").onclick = function() {
-          document.getElementById("pizzaImage8").src = "images/Arriva1.png";
-        }
-  
-        document.getElementById("smallPizza8").onclick = function() {
-          document.getElementById("pizzaImage8").src = "images/Arriva2.png";
-        }
-  
-  
-  </script>
-  
-  <a class="shine-button">Добавить в корзину за 100$</a>
+
+    document.getElementById("bigPizza8").onclick = function() {
+      document.getElementById("pizzaImage8").src = "images/Arriva0.png";
+      document.getElementById("cent8").innerHTML = 695 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent8").innerHTML = "35 см, традиционное тесто, 800 г"; //менять этот текст
+    }
+
+    document.getElementById("midPizza8").onclick = function() {
+      document.getElementById("pizzaImage8").src = "images/Arriva1.png";
+      document.getElementById("cent8").innerHTML = 565 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent8").innerHTML = "30 см, традиционное тесто, 590 г"; //менять этот текст
+    }
+
+    document.getElementById("smallPizza8").onclick = function() {
+      document.getElementById("pizzaImage8").src = "images/Arriva2.png";
+      document.getElementById("cent8").innerHTML = 375 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent8").innerHTML = "25 см, традиционное тесто, 390 г";  //менять этот текст
+    }
+    
+    /***********      Менять чекбоксы !    *******************/
+
+    document.getElementById("checkbox25").onclick = function() {
+      if(document.getElementById("checkbox25").checked){
+        let cent = Number(document.getElementById("cent8").innerHTML);
+        sumcentdop += 39;
+        document.getElementById("cent8").innerHTML = cent + 39;     //менять cent и цифру(это цена) допинга
+      } else{
+        let cent = Number(document.getElementById("cent8").innerHTML);
+        sumcentdop -= 39;
+        document.getElementById("cent8").innerHTML = cent - 39;         //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox26").onclick = function() {
+      if(document.getElementById("checkbox26").checked){
+        let cent = Number(document.getElementById("cent8").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent8").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent8").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent8").innerHTML = cent - 59;              //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox27").onclick = function() {
+      if(document.getElementById("checkbox27").checked){
+        let cent = Number(document.getElementById("cent8").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent8").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent8").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent8").innerHTML = cent - 59;            //менять cent и цифру(это цена допинга)
+      }
+    }
+
+  }
+</script>
+                                                          <!--Дефолтную цену указать-->
+<a class="shine-button">Добавить в корзину за <b id="cent8">375</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -1197,7 +1589,7 @@
   
   
   <div class="blok-center2">
-    <p id="FirstContent" style="font-size: 24px">30 см, традиционное тесто, 730 г</p>
+    <p id="FirstContent9" style="font-size: 24px">25 см, традиционное тесто, 490 г</p>
   <div style="line-height: 13px">
     <a id="SecondContent" style="font-size: 16px">бекон, митболы из говядины, пикантная пепперони, моцарелла, томаты чкрри, шампиньоны, сладкий перец, красный лук, чеснок, томатный соус</a>
     <p align="center" style="font-size: 30px">размер: </p>
@@ -1226,7 +1618,7 @@
     <input id="checkbox28" type="checkbox" name="checkbox" value="checkbox28">
     <label for="checkbox28">
       <img id='FirstDopImg' src='images\doping\chicken.png'/>
-      <span id="FirstDoping" style="font-size: 24px"><p id="FirstDopText">цыпленок</p></span>
+      <span id="FirstDoping" style="line-height: 20px"><p id="FirstDopText">цыпленок<br>59₽</p></span>
     </label>
       </div>
     
@@ -1234,7 +1626,7 @@
     <input id="checkbox29" type="checkbox" name="checkbox" value="checkbox29">
     <label for="checkbox29">
       <img id='SecondDopImg' src='images\doping\brynza.png'/>
-      <span id='SecondDoping' style="font-size: 24px"><p id="SecondDopText">брынза</p></span>
+      <span id='SecondDoping' style="line-height: 20px"><p id="SecondDopText">брынза<br>59₽</p></span>
     </label>
       </div>
     
@@ -1242,7 +1634,7 @@
     <input id="checkbox30" type="checkbox" name="checkbox" value="checkbox30">
     <label for="checkbox30">
       <img id='ThirdDopImg' src='images\doping\olives.png'/>
-      <span id='ThirdDoping' style="font-size: 24px"><p id='ThirdDopText'>маслины</p></span>
+      <span id='ThirdDoping' style="line-height: 20px"><p id='ThirdDopText'>маслины<br>49₽</p></span>
     </label>
       </div>
     </div>
@@ -1257,7 +1649,10 @@
   
   
   <script type="text/javascript">
-    
+                    {
+
+  
+let sumcentdop = 0;    
         document.getElementById("modalb9").onclick = function() {
           document.getElementById("modal9").style.display = "block";
            
@@ -1270,22 +1665,67 @@
   /*							--------Кнопки размеров-----	
                     тут для каждого размера закинь картинку													*/
                     
-        document.getElementById("bigPizza9").onclick = function() {
-          document.getElementById("pizzaImage9").src = "images/dodo0.png";
-        }
-  
-        document.getElementById("midPizza9").onclick = function() {
-          document.getElementById("pizzaImage9").src = "images/dodo1.png";
-        }
-  
-        document.getElementById("smallPizza9").onclick = function() {
-          document.getElementById("pizzaImage9").src = "images/dodo2.png";
-        }
-  
-  
-  </script>
-  
-  <a class="shine-button">Добавить в корзину за 100$</a>
+
+    document.getElementById("bigPizza9").onclick = function() {
+      document.getElementById("pizzaImage9").src = "images/dodo0.png";
+      document.getElementById("cent9").innerHTML = 745 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent9").innerHTML = "35 см, традиционное тесто, 970 г"; //менять этот текст
+    }
+
+    document.getElementById("midPizza9").onclick = function() {
+      document.getElementById("pizzaImage9").src = "images/dodo1.png";
+      document.getElementById("cent9").innerHTML = 625 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent9").innerHTML = "30 см, традиционное тесто, 730 г"; //менять этот текст
+    }
+
+    document.getElementById("smallPizza9").onclick = function() {
+      document.getElementById("pizzaImage9").src = "images/dodo2.png";
+      document.getElementById("cent9").innerHTML = 425 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent9").innerHTML = "25 см, традиционное тесто, 490 г";  //менять этот текст
+    }
+    
+    /***********      Менять чекбоксы !    *******************/
+
+    document.getElementById("checkbox28").onclick = function() {
+      if(document.getElementById("checkbox28").checked){
+        let cent = Number(document.getElementById("cent9").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent9").innerHTML = cent + 59;     //менять cent и цифру(это цена) допинга
+      } else{
+        let cent = Number(document.getElementById("cent9").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent9").innerHTML = cent - 59;         //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox29").onclick = function() {
+      if(document.getElementById("checkbox29").checked){
+        let cent = Number(document.getElementById("cent9").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent9").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent9").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent9").innerHTML = cent - 59;              //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox30").onclick = function() {
+      if(document.getElementById("checkbox30").checked){
+        let cent = Number(document.getElementById("cent9").innerHTML);
+        sumcentdop += 49;
+        document.getElementById("cent9").innerHTML = cent + 49;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent9").innerHTML);
+        sumcentdop -= 49;
+        document.getElementById("cent9").innerHTML = cent - 49;            //менять cent и цифру(это цена допинга)
+      }
+    }
+
+  }
+</script>
+                                                          <!--Дефолтную цену указать-->
+<a class="shine-button">Добавить в корзину за <b id="cent9">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -1312,7 +1752,7 @@
   
   
   <div class="blok-center2">
-    <p id="FirstContent" style="font-size: 24px">30 см, традиционное тесто, 550 г</p>
+    <p id="FirstContent10" style="font-size: 24px">25 см, традиционное тесто, 380 г</p>
   <div style="line-height: 13px">
     <a id="SecondContent" style="font-size: 16px">сыр блю чиз, сыры чеддер и пармизан, моцарелла, соус альфредо</a>
     <p align="center" style="font-size: 30px">размер: </p>
@@ -1341,7 +1781,7 @@
     <input id="checkbox31" type="checkbox" name="checkbox" value="checkbox31">
     <label for="checkbox31">
       <img id='FirstDopImg' src='images\doping\brynza.png'/>
-      <span id="FirstDoping" style="font-size: 24px"><p id="FirstDopText">брынза</p></span>
+      <span id="FirstDoping" style="line-height: 20px"><p id="FirstDopText">брынза<br>59₽</p></span>
     </label>
       </div>
     
@@ -1349,7 +1789,7 @@
     <input id="checkbox32" type="checkbox" name="checkbox" value="checkbox32">
     <label for="checkbox32">
       <img id='SecondDopImg' src='images\doping\ham.png'/>
-      <span id='SecondDoping' style="font-size: 24px"><p id="SecondDopText">ветчина</p></span>
+      <span id='SecondDoping' style="line-height: 20px"><p id="SecondDopText">ветчина<br>59₽</p></span>
     </label>
       </div>
     
@@ -1357,7 +1797,7 @@
     <input id="checkbox33" type="checkbox" name="checkbox" value="checkbox33">
     <label for="checkbox33">
       <img id='ThirdDopImg' src='images\doping\tomatoes.png'/>
-      <span id='ThirdDoping' style="font-size: 24px"><p id='ThirdDopText'>томаты</p></span>
+      <span id='ThirdDoping' style="line-height: 20px"><p id='ThirdDopText'>томаты<br>39₽</p></span>
     </label>
       </div>
     </div>
@@ -1372,7 +1812,10 @@
   
   
   <script type="text/javascript">
-    
+                    {
+
+  
+let sumcentdop = 0;    
         document.getElementById("modalb10").onclick = function() {
           document.getElementById("modal10").style.display = "block";
            
@@ -1385,22 +1828,67 @@
   /*							--------Кнопки размеров-----	
                     тут для каждого размера закинь картинку													*/
                     
-        document.getElementById("bigPizza10").onclick = function() {
-          document.getElementById("pizzaImage10").src = "images/Four cheeses0.png";
-        }
-  
-        document.getElementById("midPizza10").onclick = function() {
-          document.getElementById("pizzaImage10").src = "images/Four cheeses1.png";
-        }
-  
-        document.getElementById("smallPizza10").onclick = function() {
-          document.getElementById("pizzaImage10").src = "images/Four cheeses2.png";
-        }
-  
-  
-  </script>
-  
-  <a class="shine-button">Добавить в корзину за 100$</a>
+
+    document.getElementById("bigPizza10").onclick = function() {
+      document.getElementById("pizzaImage10").src = "images/Four cheeses0.png";
+      document.getElementById("cent10").innerHTML = 745 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent10").innerHTML = "35 см, традиционное тесто, 740 г"; //менять этот текст
+    }
+
+    document.getElementById("midPizza10").onclick = function() {
+      document.getElementById("pizzaImage10").src = "images/Four cheeses1.png";
+      document.getElementById("cent10").innerHTML = 625 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent10").innerHTML = "30 см, традиционное тесто, 550 г"; //менять этот текст
+    }
+
+    document.getElementById("smallPizza10").onclick = function() {
+      document.getElementById("pizzaImage10").src = "images/Four cheeses2.png";
+      document.getElementById("cent10").innerHTML = 425 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent10").innerHTML = "25 см, традиционное тесто, 380 г";  //менять этот текст
+    }
+    
+    /***********      Менять чекбоксы !    *******************/
+
+    document.getElementById("checkbox31").onclick = function() {
+      if(document.getElementById("checkbox31").checked){
+        let cent = Number(document.getElementById("cent10").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent10").innerHTML = cent + 59;     //менять cent и цифру(это цена) допинга
+      } else{
+        let cent = Number(document.getElementById("cent10").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent10").innerHTML = cent - 59;         //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox32").onclick = function() {
+      if(document.getElementById("checkbox32").checked){
+        let cent = Number(document.getElementById("cent10").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent10").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent10").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent10").innerHTML = cent - 59;              //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox33").onclick = function() {
+      if(document.getElementById("checkbox33").checked){
+        let cent = Number(document.getElementById("cent10").innerHTML);
+        sumcentdop += 39;
+        document.getElementById("cent10").innerHTML = cent + 39;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent10").innerHTML);
+        sumcentdop -= 39;
+        document.getElementById("cent10").innerHTML = cent - 39;            //менять cent и цифру(это цена допинга)
+      }
+    }
+
+  }
+</script>
+                                                          <!--Дефолтную цену указать-->
+<a class="shine-button">Добавить в корзину за <b id="cent10">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -1427,7 +1915,7 @@
   
   
   <div class="blok-center2">
-    <p id="FirstContent" style="font-size: 24px">30 см, традиционное тесто, 660 г</p>
+    <p id="FirstContent11" style="font-size: 24px">25 см, традиционное тесто, 440 г</p>
   <div style="line-height: 13px">
     <a id="SecondContent" style="font-size: 16px">цыпленок, ветчина, соус ранч, моцарелла, томаты, чеснок </a>
     <p align="center" style="font-size: 30px">размер: </p>
@@ -1456,7 +1944,7 @@
     <input id="checkbox34" type="checkbox" name="checkbox" value="checkbox34">
     <label for="checkbox34">
       <img id='FirstDopImg' src='images\doping\jalapeno.png'/>
-      <span id="FirstDoping" style="font-size: 24px"><p id="FirstDopText">халапеньо</p></span>
+      <span id="FirstDoping" style="line-height: 20px"><p id="FirstDopText">халапеньо<br>39₽</p></span>
     </label>
       </div>
     
@@ -1464,7 +1952,7 @@
     <input id="checkbox35" type="checkbox" name="checkbox" value="checkbox35">
     <label for="checkbox35">
       <img id='SecondDopImg' src='images\doping\chicken.png'/>
-      <span id='SecondDoping' style="font-size: 24px"><p id="SecondDopText">цыпленок</p></span>
+      <span id='SecondDoping' style="line-height: 20px"><p id="SecondDopText">цыпленок<br>59₽</p></span>
     </label>
       </div>
     
@@ -1472,7 +1960,7 @@
     <input id="checkbox36" type="checkbox" name="checkbox" value="checkbox36">
     <label for="checkbox36">
       <img id='ThirdDopImg' src='images\doping\chedr.png'/>
-      <span id='ThirdDoping' style="font-size: 24px"><p id='ThirdDopText'>чеддер</p></span>
+      <span id='ThirdDoping' style="line-height: 20px"><p id='ThirdDopText'>чеддер<br>49₽</p></span>
     </label>
       </div>
     </div>
@@ -1487,7 +1975,10 @@
   
   
   <script type="text/javascript">
-    
+                     {
+
+  
+let sumcentdop = 0;   
         document.getElementById("modalb11").onclick = function() {
           document.getElementById("modal11").style.display = "block";
            
@@ -1500,22 +1991,67 @@
   /*							--------Кнопки размеров-----	
                     тут для каждого размера закинь картинку													*/
                     
-        document.getElementById("bigPizza11").onclick = function() {
-          document.getElementById("pizzaImage11").src = "images/Chicken Ranch0.png";
-        }
-  
-        document.getElementById("midPizza11").onclick = function() {
-          document.getElementById("pizzaImage11").src = "images/Chicken Ranch1.png";
-        }
-  
-        document.getElementById("smallPizza11").onclick = function() {
-          document.getElementById("pizzaImage11").src = "images/Chicken Ranch2.png";
-        }
-  
-  
-  </script>
-  
-  <a class="shine-button">Добавить в корзину за 100$</a>
+
+    document.getElementById("bigPizza11").onclick = function() {
+      document.getElementById("pizzaImage11").src = "images/Chicken Ranch0.png";
+      document.getElementById("cent11").innerHTML = 745 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent11").innerHTML = "35 см, традиционное тесто, 910 г"; //менять этот текст
+    }
+
+    document.getElementById("midPizza11").onclick = function() {
+      document.getElementById("pizzaImage11").src = "images/Chicken Ranch1.png";
+      document.getElementById("cent11").innerHTML = 625 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent11").innerHTML = "30 см, традиционное тесто, 660 г"; //менять этот текст
+    }
+
+    document.getElementById("smallPizza11").onclick = function() {
+      document.getElementById("pizzaImage11").src = "images/Chicken Ranch2.png";
+      document.getElementById("cent11").innerHTML = 425 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent11").innerHTML = "25 см, традиционное тесто, 440 г";  //менять этот текст
+    }
+    
+    /***********      Менять чекбоксы !    *******************/
+
+    document.getElementById("checkbox34").onclick = function() {
+      if(document.getElementById("checkbox34").checked){
+        let cent = Number(document.getElementById("cent11").innerHTML);
+        sumcentdop += 39;
+        document.getElementById("cent11").innerHTML = cent + 39;     //менять cent и цифру(это цена) допинга
+      } else{
+        let cent = Number(document.getElementById("cent11").innerHTML);
+        sumcentdop -= 39;
+        document.getElementById("cent11").innerHTML = cent - 39;         //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox35").onclick = function() {
+      if(document.getElementById("checkbox35").checked){
+        let cent = Number(document.getElementById("cent11").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent11").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent11").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent11").innerHTML = cent - 59;              //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox36").onclick = function() {
+      if(document.getElementById("checkbox36").checked){
+        let cent = Number(document.getElementById("cent11").innerHTML);
+        sumcentdop += 49;
+        document.getElementById("cent11").innerHTML = cent + 49;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent11").innerHTML);
+        sumcentdop -= 49;
+        document.getElementById("cent11").innerHTML = cent - 49;            //менять cent и цифру(это цена допинга)
+      }
+    }
+
+  }
+</script>
+                                                          <!--Дефолтную цену указать-->
+<a class="shine-button">Добавить в корзину за <b id="cent11">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -1542,7 +2078,7 @@
   
   
   <div class="blok-center2">
-    <p id="FirstContent" style="font-size: 24px">30 см, традиционное тесто, 660 г</p>
+    <p id="FirstContent12" style="font-size: 24px">25 см, традиционное тесто, 450 г</p>
   <div style="line-height: 13px">
     <a id="SecondContent" style="font-size: 16px">цыпленок, бекон, соус барбекю, красный лук, моцарелла, томатный соус</a>
     <p align="center" style="font-size: 30px">размер: </p>
@@ -1571,7 +2107,7 @@
     <input id="checkbox37" type="checkbox" name="checkbox" value="checkbox37">
     <label for="checkbox37">
       <img id='FirstDopImg' src='images\doping\chicken.png'/>
-      <span id="FirstDoping" style="font-size: 24px"><p id="FirstDopText">цыпленок</p></span>
+      <span id="FirstDoping" style="line-height: 20px"><p id="FirstDopText">цыпленок<br>59₽</p></span>
     </label>
       </div>
     
@@ -1579,7 +2115,7 @@
     <input id="checkbox38" type="checkbox" name="checkbox" value="checkbox38">
     <label for="checkbox38">
       <img id='SecondDopImg' src='images\doping\tomatoes.png'/>
-      <span id='SecondDoping' style="font-size: 24px"><p id="SecondDopText">томаты</p></span>
+      <span id='SecondDoping' style="line-height: 20px"><p id="SecondDopText">томаты<br>39₽</p></span>
     </label>
       </div>
     
@@ -1587,7 +2123,7 @@
     <input id="checkbox39" type="checkbox" name="checkbox" value="checkbox39">
     <label for="checkbox39">
       <img id='ThirdDopImg' src='images\doping\chedr.png'/>
-      <span id='ThirdDoping' style="font-size: 24px"><p id='ThirdDopText'>чеддер</p></span>
+      <span id='ThirdDoping' style="line-height: 20px"><p id='ThirdDopText'>чеддер<br>49₽</p></span>
     </label>
       </div>
     </div>
@@ -1602,7 +2138,10 @@
   
   
   <script type="text/javascript">
-    
+                       {
+
+  
+let sumcentdop = 0; 
         document.getElementById("modalb12").onclick = function() {
           document.getElementById("modal12").style.display = "block";
            
@@ -1615,22 +2154,67 @@
   /*							--------Кнопки размеров-----	
                     тут для каждого размера закинь картинку													*/
                     
-        document.getElementById("bigPizza12").onclick = function() {
-          document.getElementById("pizzaImage12").src = "images/Barbecue Chicken0.png";
-        }
-  
-        document.getElementById("midPizza12").onclick = function() {
-          document.getElementById("pizzaImage12").src = "images/Barbecue Chicken1.png";
-        }
-  
-        document.getElementById("smallPizza12").onclick = function() {
-          document.getElementById("pizzaImage12").src = "images/Barbecue Chicken2.png";
-        }
-  
-  
-  </script>
-  
-  <a class="shine-button">Добавить в корзину за 100$</a>
+
+    document.getElementById("bigPizza12").onclick = function() {
+      document.getElementById("pizzaImage12").src = "images/Barbecue Chicken0.png";
+      document.getElementById("cent12").innerHTML = 745 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent12").innerHTML = "35 см, традиционное тесто, 880 г"; //менять этот текст
+    }
+
+    document.getElementById("midPizza12").onclick = function() {
+      document.getElementById("pizzaImage12").src = "images/Barbecue Chicken1.png";
+      document.getElementById("cent12").innerHTML = 625 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent12").innerHTML = "30 см, традиционное тесто, 660 г"; //менять этот текст
+    }
+
+    document.getElementById("smallPizza12").onclick = function() {
+      document.getElementById("pizzaImage12").src = "images/Barbecue Chicken2.png";
+      document.getElementById("cent12").innerHTML = 425 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent12").innerHTML = "25 см, традиционное тесто, 450 г";  //менять этот текст
+    }
+    
+    /***********      Менять чекбоксы !    *******************/
+
+    document.getElementById("checkbox37").onclick = function() {
+      if(document.getElementById("checkbox37").checked){
+        let cent = Number(document.getElementById("cent12").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent12").innerHTML = cent + 59;     //менять cent и цифру(это цена) допинга
+      } else{
+        let cent = Number(document.getElementById("cent12").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent12").innerHTML = cent - 59;         //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox38").onclick = function() {
+      if(document.getElementById("checkbox38").checked){
+        let cent = Number(document.getElementById("cent12").innerHTML);
+        sumcentdop += 39;
+        document.getElementById("cent12").innerHTML = cent + 39;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent12").innerHTML);
+        sumcentdop -= 39;
+        document.getElementById("cent12").innerHTML = cent - 39;              //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox39").onclick = function() {
+      if(document.getElementById("checkbox39").checked){
+        let cent = Number(document.getElementById("cent12").innerHTML);
+        sumcentdop += 49;
+        document.getElementById("cent12").innerHTML = cent + 49;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent12").innerHTML);
+        sumcentdop -= 49;
+        document.getElementById("cent12").innerHTML = cent - 49;            //менять cent и цифру(это цена допинга)
+      }
+    }
+
+  }
+</script>
+                                                          <!--Дефолтную цену указать-->
+<a class="shine-button">Добавить в корзину за <b id="cent12">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -1657,7 +2241,7 @@
   
   
   <div class="blok-center2">
-    <p id="FirstContent" style="font-size: 24px">30 см, традиционное тесто, 640 г</p>
+    <p id="FirstContent13" style="font-size: 24px">25 см, традиционное тесто, 440 г</p>
   <div style="line-height: 13px">
     <a id="SecondContent" style="font-size: 16px">пикантная пепперони, цыпленок, острая чоризо, бекон, митболы из говядины, моцарелла, томатный соус</a>
     <p align="center" style="font-size: 30px">размер: </p>
@@ -1686,7 +2270,7 @@
     <input id="checkbox40" type="checkbox" name="checkbox" value="checkbox40">
     <label for="checkbox40">
       <img id='FirstDopImg' src='images\doping\jalapeno.png'/>
-      <span id="FirstDoping" style="font-size: 24px"><p id="FirstDopText">халапеньо</p></span>
+      <span id="FirstDoping" style="line-height: 20px"><p id="FirstDopText">халапеньо<br>39₽</p></span>
     </label>
       </div>
     
@@ -1694,7 +2278,7 @@
     <input id="checkbox41" type="checkbox" name="checkbox" value="checkbox41">
     <label for="checkbox41">
       <img id='SecondDopImg' src='images\doping\tomatoes.png'/>
-      <span id='SecondDoping' style="font-size: 24px"><p id="SecondDopText">томаты</p></span>
+      <span id='SecondDoping' style="line-height: 20px"><p id="SecondDopText">томаты<br>39₽</p></span>
     </label>
       </div>
     
@@ -1702,7 +2286,7 @@
     <input id="checkbox42" type="checkbox" name="checkbox" value="checkbox42">
     <label for="checkbox42">
       <img id='ThirdDopImg' src='images\doping\chicken.png'/>
-      <span id='ThirdDoping' style="font-size: 24px"><p id='ThirdDopText'>цыпленок</p></span>
+      <span id='ThirdDoping' style="line-height: 20px"><p id='ThirdDopText'>цыпленок<br>59₽</p></span>
     </label>
       </div>
     </div>
@@ -1730,22 +2314,70 @@
   /*							--------Кнопки размеров-----	
                     тут для каждого размера закинь картинку													*/
                     
-        document.getElementById("bigPizza13").onclick = function() {
-          document.getElementById("pizzaImage13").src = "images/Supermass0.png";
-        }
+                    {
+
   
-        document.getElementById("midPizza13").onclick = function() {
-          document.getElementById("pizzaImage13").src = "images/Supermass1.png";
-        }
-  
-        document.getElementById("smallPizza13").onclick = function() {
-          document.getElementById("pizzaImage13").src = "images/Supermass2.png";
-        }
-  
-  
-  </script>
-  
-  <a class="shine-button">Добавить в корзину за 100$</a>
+let sumcentdop = 0;
+    document.getElementById("bigPizza13").onclick = function() {
+      document.getElementById("pizzaImage13").src = "images/Supermass0.png";
+      document.getElementById("cent13").innerHTML = 865 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent13").innerHTML = "35 см, традиционное тесто, 870 г"; //менять этот текст
+    }
+
+    document.getElementById("midPizza13").onclick = function() {
+      document.getElementById("pizzaImage13").src = "images/Supermass1.png";
+      document.getElementById("cent13").innerHTML = 725 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent13").innerHTML = "30 см, традиционное тесто, 640 г"; //менять этот текст
+    }
+
+    document.getElementById("smallPizza13").onclick = function() {
+      document.getElementById("pizzaImage13").src = "images/Supermass2.png";
+      document.getElementById("cent13").innerHTML = 465 + sumcentdop;  //менять cent и цифру(это цена)
+      document.getElementById("FirstContent13").innerHTML = "25 см, традиционное тесто, 440 г";  //менять этот текст
+    }
+    
+    /***********      Менять чекбоксы !    *******************/
+
+    document.getElementById("checkbox40").onclick = function() {
+      if(document.getElementById("checkbox40").checked){
+        let cent = Number(document.getElementById("cent13").innerHTML);
+        sumcentdop += 39;
+        document.getElementById("cent13").innerHTML = cent + 39;     //менять cent и цифру(это цена) допинга
+      } else{
+        let cent = Number(document.getElementById("cent13").innerHTML);
+        sumcentdop -= 39;
+        document.getElementById("cent13").innerHTML = cent - 39;         //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox41").onclick = function() {
+      if(document.getElementById("checkbox41").checked){
+        let cent = Number(document.getElementById("cent13").innerHTML);
+        sumcentdop += 39;
+        document.getElementById("cent13").innerHTML = cent + 39;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent13").innerHTML);
+        sumcentdop -= 39;
+        document.getElementById("cent13").innerHTML = cent - 39;              //менять cent и цифру(это цена допинга)
+      }
+    }
+/***********      Менять чекбоксы !    *******************/
+    document.getElementById("checkbox42").onclick = function() {
+      if(document.getElementById("checkbox42").checked){
+        let cent = Number(document.getElementById("cent13").innerHTML);
+        sumcentdop += 59;
+        document.getElementById("cent13").innerHTML = cent + 59;          //менять cent и цифру(это цена допинга)
+      } else{
+        let cent = Number(document.getElementById("cent13").innerHTML);
+        sumcentdop -= 59;
+        document.getElementById("cent13").innerHTML = cent - 59;            //менять cent и цифру(это цена допинга)
+      }
+    }
+
+  }
+</script>
+                                                          <!--Дефолтную цену указать-->
+<a class="shine-button">Добавить в корзину за <b id="cent13">465</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -1816,7 +2448,7 @@
 
 
 
-  <a class="shine-button1">Добавить в корзину за 100$</a>
+  <a class="shine-button">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
@@ -1844,7 +2476,7 @@
 
 
 
-  <a class="shine-button1">Добавить в корзину за 100$</a>
+  <a class="shine-button">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
@@ -1872,7 +2504,7 @@
 
 
 
-  <a class="shine-button">Добавить в корзину за 100$</a>
+  <a class="shine-button">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
@@ -1900,7 +2532,7 @@
 
 
 
-  <a class="shine-button">Добавить в корзину за 100$</a>
+  <a class="shine-button">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
@@ -1928,7 +2560,7 @@
 
 
 
-  <a class="shine-button">Добавить в корзину за 100$</a>
+  <a class="shine-button">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
@@ -1956,7 +2588,7 @@
 
 
 
-  <a class="shine-button">Добавить в корзину за 100$</a>
+  <a class="shine-button">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
@@ -1984,7 +2616,7 @@
 
 
 
-  <a class="shine-button">Добавить в корзину за 100$</a>
+  <a class="shine-button">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
@@ -2012,7 +2644,7 @@
 
 
 
-  <a class="shine-button">Добавить в корзину за 100$</a>
+  <a class="shine-button">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
