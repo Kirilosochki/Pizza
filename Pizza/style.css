@@ -132,6 +132,20 @@ hr {
   margin-top: -50px;
 }
 
+.block2 {
+  /* Это блок   белого цвета внутри обертки */
+  width: 425px;
+  height: 800px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid #e25e06;
+  border-radius: 10px;
+  position: absolute;
+  top: 140px;
+  right: 20px;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
 .close {
   /* Это закрывашка блока  , обозначенная крестиком*/
   color: red;
@@ -317,6 +331,14 @@ hr {
   pointer-events: none;
 }
 #modal22:target {
+  display: block;
+  pointer-events: auto;
+}
+#modal23 {
+  display: none;
+  pointer-events: none;
+}
+#modal23:target {
   display: block;
   pointer-events: auto;
 }
