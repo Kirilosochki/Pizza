@@ -24,7 +24,7 @@
 <li class="left-item"><a href="">Контакты</a></li>
 <li class="left-item"><a href="">Акции</a></li>
 <li class="left-item"><a href="">Промокоды</a></li>
-<li class="right-item"><a href="#modal23">корзина</a></li>
+<li class="right-item"><a id="bbasket" href="#modal23">корзина</a></li>
 </ul>
 <a class="navbar-logo" href=""><img src="" width="120" height="77"></a>
 </nav>
@@ -34,16 +34,20 @@
   <div class="block2">
     <h1 id="name" align="center" style="color:#e25e06">корзина</h1>
     <hr>
-    <img align="left" width = "95" height = "95" src="images/Pepperoni0.png"; ><!--допустим здесь появляется картинка с права от неё - 1 +   тип добавить ешё или убрать -->
-    <a>название</a><br>
-    <a>25 см, традиционное тесто, 340 г</a><br>
-    <a>- +</a>
-    <a>цена</a>
+
+    <div >
+      <ul id='basket'>
+
+
+
+      </ul>
+
+  </div>
 
 
 <!--тудема делаем допинги тип под пиццей которые добавлены ну можно без этого если будесложно -->
 
-    <hr>
+    
 
 
 
@@ -52,6 +56,25 @@
 </div> 
 </div> 
 
+<script>
+  
+
+
+  console.log(document.getElementById("bbasket").innerHTML);
+  document.getElementById("bbasket").onclick = function(){
+    document.getElementById('basket').innerHTML = " ";
+  document.querySelectorAll(".shine-button").forEach(function(e){
+    
+    if(e.getAttribute("data-num") > 0){
+      console.log(e.getAttribute("data-num"));
+      document.getElementById('basket').innerHTML += '<div class="baskelement"><img align="left" width = "95" height = "95" src="'+e.getAttribute("data-image")+'"; >'
+    +'<a>'+e.getAttribute("data-name")+'</a><br>'
+    
+    +''
+    +'<a>'+ e.firstElementChild.innerHTML +'$</a><hr></div>';
+    }
+  })}
+</script>
                                                              <!--fffffffffffffffffffffffffffffff-->
 <hr>
   <div class="blok-center10">
@@ -200,7 +223,7 @@
   let sumcentdop = 0; // это общяя цена с допингов, он аизменяется при нажатии || ее не менять
 	
 			document.getElementById("modalb").onclick = function() {
-				document.getElementById("modal").style.display = "block";
+				document.getElementById("modal").style.display = "block"; 
         
 
 			}
@@ -268,10 +291,12 @@
         }
       }
 
+
+
     }
 </script>
                                                             <!--Дефолтную цену указать-->
-<a class="shine-button">Добавить в корзину за <b id="cent">245</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
+<a class="shine-button" data-num='0' data-name='Name' data-image="images/Pepperoni0.png">Добавить в корзину за <b id="cent">245</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
 
 
 <div id="stretcher"></div>
@@ -365,7 +390,7 @@
     let sumcentdop = 0;
 
 			document.getElementById("modalb1").onclick = function() {
-				document.getElementById("modal1").style.display = "block";
+				document.getElementById("modal1").style.display = "block"; 
 				 
 			}
 			document.getElementById("close1").onclick = function(){
@@ -437,7 +462,7 @@
     
 </script>
                                                             <!--Дефолтную цену указать-->
-<a class="shine-button">Добавить в корзину за <b id="cent1">295</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
+<a class="shine-button" data-num='0' data-name='Name' data-image="images/Meaty2.png">Добавить в корзину за <b id="cent1">295</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
 
 
 
@@ -604,7 +629,7 @@ document.getElementById("bigPizza2").onclick = function() {
 
 </script>
                                                         <!--Дефолтную цену указать-->
-<a class="shine-button">Добавить в корзину за <b id="cent2">295</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
+<a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за <b id="cent2">295</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
 
 <div id="stretcher"></div>
 <p></p>
@@ -768,7 +793,7 @@ let sumcentdop = 0
   }
 </script>
                                                           <!--Дефолтную цену указать-->
-<a class="shine-button">Добавить в корзину за <b id="cent3">325</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
+<a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за <b id="cent3">325</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
 
 <div id="stretcher"></div>
 <p></p>
@@ -932,7 +957,7 @@ let sumcentdop = 0;
   }
 </script>
                                                           <!--Дефолтную цену указать-->
-<a class="shine-button">Добавить в корзину за <b id="cent4">375</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
+<a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за <b id="cent4">375</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
 
 <div id="stretcher"></div>
 <p></p>
@@ -1095,7 +1120,7 @@ let sumcentdop = 0;
   }
 </script>
                                                           <!--Дефолтную цену указать-->
-<a class="shine-button">Добавить в корзину за <b id="cent5">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
+<a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за <b id="cent5">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -1258,7 +1283,7 @@ let sumcentdop = 0;
   }
 </script>
                                                           <!--Дефолтную цену указать-->
-<a class="shine-button">Добавить в корзину за <b id="cent6">465</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
+<a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за <b id="cent6">465</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -1421,7 +1446,7 @@ let sumcentdop = 0;
   }
 </script>
                                                           <!--Дефолтную цену указать-->
-<a class="shine-button">Добавить в корзину за <b id="cent7">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
+<a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за <b id="cent7">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -1584,7 +1609,7 @@ let sumcentdop = 0;
   }
 </script>
                                                           <!--Дефолтную цену указать-->
-<a class="shine-button">Добавить в корзину за <b id="cent8">375</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
+<a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за <b id="cent8">375</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -1747,7 +1772,7 @@ let sumcentdop = 0;
   }
 </script>
                                                           <!--Дефолтную цену указать-->
-<a class="shine-button">Добавить в корзину за <b id="cent9">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
+<a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за <b id="cent9">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -1910,7 +1935,7 @@ let sumcentdop = 0;
   }
 </script>
                                                           <!--Дефолтную цену указать-->
-<a class="shine-button">Добавить в корзину за <b id="cent10">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
+<a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за <b id="cent10">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -2073,7 +2098,7 @@ let sumcentdop = 0;
   }
 </script>
                                                           <!--Дефолтную цену указать-->
-<a class="shine-button">Добавить в корзину за <b id="cent11">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
+<a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за <b id="cent11">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -2236,7 +2261,7 @@ let sumcentdop = 0;
   }
 </script>
                                                           <!--Дефолтную цену указать-->
-<a class="shine-button">Добавить в корзину за <b id="cent12">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
+<a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за <b id="cent12">425</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -2399,7 +2424,7 @@ let sumcentdop = 0;
   }
 </script>
                                                           <!--Дефолтную цену указать-->
-<a class="shine-button">Добавить в корзину за <b id="cent13">465</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
+<a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за <b id="cent13">465</b>₽</a>  <!---- //менять cent (цифру добавлять) -->
   
   <div id="stretcher"></div>
   <p></p>
@@ -2470,7 +2495,7 @@ let sumcentdop = 0;
 
 
 
-  <a class="shine-button">Добавить в корзину за 100₽</a>
+  <a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
@@ -2498,7 +2523,7 @@ let sumcentdop = 0;
 
 
 
-  <a class="shine-button">Добавить в корзину за 100₽</a>
+  <a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
@@ -2526,7 +2551,7 @@ let sumcentdop = 0;
 
 
 
-  <a class="shine-button">Добавить в корзину за 100₽</a>
+  <a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
@@ -2554,7 +2579,7 @@ let sumcentdop = 0;
 
 
 
-  <a class="shine-button">Добавить в корзину за 100₽</a>
+  <a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
@@ -2582,7 +2607,7 @@ let sumcentdop = 0;
 
 
 
-  <a class="shine-button">Добавить в корзину за 100₽</a>
+  <a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
@@ -2610,7 +2635,7 @@ let sumcentdop = 0;
 
 
 
-  <a class="shine-button">Добавить в корзину за 100₽</a>
+  <a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
@@ -2638,7 +2663,7 @@ let sumcentdop = 0;
 
 
 
-  <a class="shine-button">Добавить в корзину за 100₽</a>
+  <a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
@@ -2666,7 +2691,7 @@ let sumcentdop = 0;
 
 
 
-  <a class="shine-button">Добавить в корзину за 100₽</a>
+  <a class="shine-button" data-num='0' data-name='Name' data-image="">Добавить в корзину за 100₽</a>
   
   <div id="stretcher"></div>
   <p></p>
@@ -2674,7 +2699,15 @@ let sumcentdop = 0;
   <a class="close" href="#clos"></a>
   </div>
 
-
+<script>
+document.querySelectorAll(".shine-button").forEach(function(e){
+  e.onclick = function(){
+    let newn = Number(e.getAttribute("data-num")) + 1;
+    e.setAttribute("data-num", newn);
+    
+    
+  }
+  console.log("lof1");});</script>
  
 </body>
 </html>
