@@ -2718,10 +2718,10 @@ document.querySelectorAll(".shine-button").forEach(function(e){
     if(e.getAttribute("data-num") > 0){
       console.log(e.getAttribute("data-num"));
       document.getElementById('basket').innerHTML += '<div class="baskelement"><img align="left" width = "95" height = "95" src="'+e.getAttribute("data-image")+'"; >'
-    +'<a>'+e.getAttribute("data-name")+'</a><br>'
-    +'<a class="count" data-is="'+ itera +'">Количество: '+e.getAttribute("data-num")+'</a><br/>'
-    +'<button type="button" class="minibutton" data-i="'+ itera +'" data-z="1">+</button><button type="button" class="minibutton" data-i="'+ itera +'" data-z="0">-</button>'
-    +'<a>Цена: '+ (Number(e.getAttribute("data-cent")) * Number(e.getAttribute("data-num"))) +'$</a><hr></div>';
+    +'<a class="bname">'+e.getAttribute("data-name")+'</a><br>'
+    +'<a class="bcount" class="count" data-is="'+ itera +'">Количество: '+e.getAttribute("data-num")+'</a><br/>'
+    +'<button type="button" class="minibutton plus" data-i="'+ itera +'" data-z="1">+</button><button type="button" class="minibutton minus" data-i="'+ itera +'" data-z="0">-</button>'
+    +'<a class"bcent">Цена: '+ (Number(e.getAttribute("data-cent")) * Number(e.getAttribute("data-num"))) +'$</a><hr></div>';
     e.setAttribute("data-it", itera);
     itera += 1;
     console.log(itera);
